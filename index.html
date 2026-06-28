@@ -11,7 +11,7 @@
         color: #f8f9fa;
         line-height: 1.5;
         margin: 0;
-      }
+      } 
       .header {
         background: linear-gradient(105deg, #03045e 0%, #0077b6 100%);
         padding: 50px 20px;
@@ -41,6 +41,25 @@
         margin: 40px auto;
         padding: 0 20px;
       }
+      .work {
+        display: flex;
+        flex-direction: columns;
+        gap: 40px;
+      }
+
+      .art-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 25px;
+        margin-top: 20px;
+      }
+
+      .art-box {
+        background-color: #0a1128;
+        border-radius: 10px;
+        border: 1px solid #005f73;
+        overflow: hidden;
+      }
       
     </style>
   </head>
@@ -56,7 +75,27 @@
     <div class="container">
       <section id="Technical">
         <h2> Technical and Animation Pipelines</h2>
+        <div class="work">
+          
+        </div>
       </section>
+
+      <section id="Art">
+        <h2>Visual Develoopment</h2>
+        <div class="art-grid">
+          <!--Mahoraga -->
+          <div class="art-box">
+          </div>
+
+          <!--Groot-->
+          <div class="art-box">
+          </div>
+
+          <!--Portraits-->
+          <div class="art box">
+          </div>
+          
+        </div>
     </div>
     
   </body>
