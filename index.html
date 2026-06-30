@@ -65,6 +65,7 @@
       /*Container*/
       .container {
         max-width: 1200px;
+        width: 100%;
         margin: 40px auto;
         padding: 0 20px;
       }
@@ -76,9 +77,15 @@
 
       .art-grid {
         display: grid;
-        gird-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         margin-top: 20px;
+        width: 100%;
+      }
+      @media (max-width: 768px) {
+        .art-grid {
+          grid-template-columns: 1fr;
+        }
       }
 
       .art-box {
